@@ -44,9 +44,9 @@ charadex.sheet = {
 
     designTypes: ['All', 'Official Design', 'Guest Design', 'MYO Slot', 'MYO Design', 'Mascot'],
     statuses: ['All', 'Resell', 'Trade', 'Gift', 'Voided'],
-    rarity: ['All', 'Cavernborn', 'Moonborn', 'Veilborn', 'Illegal', 'Item',  'Trait'],
+    rarity: ['All', 'Cavernborn', 'Moonborn', 'Veilborn', 'Illegal', 'Misc',  'Trait'],
     species: ['All', 'Sacrayne'],
-    itemTypes: ['All', 'Currency', 'MYO Slot', 'Pet', 'Trait', 'Misc'],
+    itemTypes: ['All', 'Currency', 'MYO Slot', 'Pet', 'Trait', 'Item'],
     traitTypes: ['All', 'Required', 'OPT', 'Traited', 'Misc', 'Mutations']
 
   }
