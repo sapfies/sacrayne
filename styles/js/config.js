@@ -47,7 +47,7 @@ charadex.sheet = {
     rarity: ['All', 'Cavernborn', 'Moonborn', 'Veilborn', 'Illegal', 'Item'],
     species: ['All', 'Sacrayne'],
     itemTypes: ['All', 'Currency', 'MYO Slot', 'Pet', 'Trait', 'Misc'],
-    traitTypes: ['All', 'Ears', 'Eyes', 'Body', 'Limbs', 'Tails', 'Misc', 'Mutations']
+    traitTypes: ['All', 'Required', 'Traited', 'Misc', 'Mutations']
 
   }
 
