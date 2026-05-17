@@ -16,7 +16,7 @@ let charadex = {};
 /* ==================================================================== */
 charadex.site = {
   title: "Sacrayne",
-  url: "https://sacrayne.vercel.app/",
+  url: "https://sapfies.github.io/sacrayne/",
   description: `A Closed Avian Species`
 }
 
