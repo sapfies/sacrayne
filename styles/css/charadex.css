@@ -1,5 +1,11 @@
 body {
 
+
+  #pagedoll {
+  position: fixed;
+  top: 100px;
+  left:100px;
+}
   /* ============================================================= */
   /*
   /* Main Styles
