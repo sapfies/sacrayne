@@ -15,24 +15,24 @@ body {
   /* ============================================================= */
   /* Primary Color
   ================================================================ */
-  --cd-primary-color: #8a2f45;
+  --cd-primary-color: #4c4f5c;
   --cd-primary-text-color: #fff;
 
   /* ============================================================= */
   /* Secondary Color
   ================================================================ */
-  --cd-secondary-color: #897579;
+  --cd-secondary-color: #9e999a;
   --cd-secondary-text-color: #fff;
 
   /* ============================================================= */
   /* Backgrounds
   ================================================================ */
-  --cd-body-background-color: #f8f8f8;
-  --cd-content-background-color: #ffffff;
-  --cd-faded-background-color: #f8f8f8;
+  --cd-body-background-color: #242121;
+  --cd-content-background-color: #e9e4e4;
+  --cd-faded-background-color: #242121;
 
   /* Background Extras */
-  --cd-body-background-image: url();
+  --cd-body-background-image: url(https://i1-e.pinimg.com/736x/18/92/fd/1892fdd1094f2a04f2d25fcadf30227c.jpg);
 
   /* ============================================================= */
   /* Text
@@ -51,7 +51,7 @@ body {
   /* ============================================================= */
   /* Navbar
   ================================================================ */
-  --cd-navbar-background-color: #3e1221;
+  --cd-navbar-background-color: #000000;
   --cd-navbar-brand-color: var(--cd-primary-color);
   --cd-navbar-brand-color-hover: var(--cd-secondary-color);
   --cd-navbar-text-color: var(--cd-content-background-color);
@@ -125,7 +125,7 @@ body {
   /* Link
   ================================================================ */
 
-  --cd-link-text-color: #8a2f45;
+  --cd-link-text-color: #504862;
   --cd-link-text-color-hover: var(--cd-secondary-color);
 
 
