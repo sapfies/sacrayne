@@ -856,26 +856,6 @@ body::after {
     0 0 18px rgba(120,80,255,0.35);
 }
 
-/* ============================================================= */
-/* Gallery Hover Effects
-/* ============================================================= */
-
-.cd-gallery-card,
-#charadex-gallery .card {
-
-  transition:
-    transform .25s ease,
-    box-shadow .25s ease;
-}
-
-.cd-gallery-card:hover,
-#charadex-gallery .card:hover {
-
-  transform: translateY(-5px);
-
-  box-shadow:
-    0 0 24px rgba(120,80,255,0.18);
-}
 
 /* ============================================================= */
 /* Mobile Improvements
