@@ -898,3 +898,47 @@ body::after {
     justify-content: center;
   }
 }
+
+/* ============================================================= */
+/* TRUE FULL WIDTH FOOTER
+/* ============================================================= */
+
+#footer {
+
+  width: 100vw !important;
+
+  margin-left: calc(50% - 50vw);
+
+  background:
+    rgba(20,21,23,0.96) !important;
+
+  border-top:
+    1px solid rgba(255,255,255,0.06);
+
+  padding:
+    2rem 1rem;
+
+  position: relative;
+
+  z-index: 10;
+}
+
+#footer .footer-inner {
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+#footer p {
+  margin-bottom: .5rem;
+}
+
+.footer-credit {
+
+  opacity: .5;
+
+  font-size: .8rem;
+}
