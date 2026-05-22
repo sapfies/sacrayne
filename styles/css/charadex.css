@@ -691,7 +691,6 @@ p:last-child {
 /* Custom Classes
 /* ============================================================= */
 
-/* Prevents awkward load in stutter */
 #charadex-gallery .list .card-body {
   min-height: calc(200px + 2.5rem);
 }
@@ -805,34 +804,6 @@ body::before {
   z-index: -2;
 }
 
-body::after {
-  content: "";
-
-  position: fixed;
-  inset: 0;
-
-  background-image:
-    radial-gradient(white 1px, transparent 1px);
-
-  background-size: 40px 40px;
-
-  opacity: 0.08;
-
-  animation: starsMove 90s linear infinite;
-
-  pointer-events: none;
-  z-index: -1;
-}
-
-@keyframes starsMove {
-  from {
-    transform: translateY(0px);
-  }
-
-  to {
-    transform: translateY(200px);
-  }
-}
 
 /* ============================================================= */
 /* Navbar Glow
