@@ -28,7 +28,7 @@ body {
   /* Backgrounds
   ================================================================ */
   --cd-body-background-color: #1f2026;
-  --cd-content-background-color: #656073;
+  --cd-content-background-color: #2c2d34;
   --cd-faded-background-color: #1f2026;
 
   /* Background Extras */
@@ -43,7 +43,7 @@ body {
   /* ============================================================= */
   /* Borders
   ================================================================ */
-  --cd-border-color: rgba(0, 0, 0, 0.125);
+  --cd-border-color: rgba(44, 45, 52, 0.125);
   --cd-border-width: 1px;
   --cd-border-style: solid;
   --cd-border-radius: 1rem;
