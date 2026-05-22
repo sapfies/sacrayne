@@ -1,3 +1,10 @@
+:root {
+
+  --glow-purple: rgba(120, 80, 255, 0.35);
+  --glow-blue: rgba(80, 170, 255, 0.18);
+
+}
+
 body {
 
   /* ============================================================= */
@@ -448,32 +455,50 @@ a:active {
 /* Card
 /* ============================================================= */
 
+/* ============================================================= */
+/* Card
+/* ============================================================= */
+
 .card {
-  background-color: var(--cd-card-background-color) !important;
-  border-width: var(--cd-card-border-width) !important;
-  border-style: var(--cd-card-border-style) !important;
-  border-color: var(--cd-card-border-color) !important;
-  border-radius: var(--cd-border-radius) !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(44,45,52,0.92),
+      rgba(31,32,38,0.96)
+    ) !important;
+
+  border-width: 1px !important;
+  border-style: solid !important;
+
+  border-color:
+    rgba(255,255,255,0.06) !important;
+
+  border-radius: 1.2rem !important;
+
+  backdrop-filter: blur(10px);
+
+  box-shadow:
+    0 0 20px rgba(120,80,255,0.08),
+    0 0 40px rgba(0,0,0,0.2);
+
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    border-color .25s ease;
 }
 
-.card-header {
-  background-color: var(--cd-card-header-background-color) !important;
-  border-bottom-color: var(--cd-card-border-color) !important;
-  border-bottom-width: var(--cd-card-border-width) !important;
-  border-bottom-style: var(--cd-card-border-style) !important;
-  font-family: var(--cd-card-header-font-family) !important;
-  border-radius: calc(var(--cd-border-radius) - 1px) calc(var(--cd-border-radius) - 1px) 0 0 !important;
-}
+.card:hover {
 
-.card-footer {
-  background-color: var(--cd-card-header-background-color) !important;
-  border-top-color: var(--cd-card-border-color) !important;
-  border-top-width: var(--cd-card-border-width) !important;
-  border-top-style: var(--cd-card-border-style) !important;
-  font-family: var(--cd-card-header-font-family) !important;
-  border-radius: 0 0  calc(var(--cd-border-radius) - 1px) calc(var(--cd-border-radius) - 1px) !important;
-}
+  transform: translateY(-4px);
 
+  border-color:
+    rgba(150,120,255,0.2) !important;
+
+  box-shadow:
+    0 0 25px rgba(120,80,255,0.18),
+    0 0 45px rgba(80,170,255,0.08);
+}
 
 
 /* ============================================================= */
@@ -773,4 +798,173 @@ p:last-child {
 .badge-mythic {
   background-color: var(--cd-rarity-legendary-bg);
   color: var(--cd-rarity-legendary-txt);
+}
+
+/* ============================================================= */
+/* Animated Background
+/* ============================================================= */
+
+body::before {
+  content: "";
+
+  position: fixed;
+  inset: 0;
+
+  background:
+    radial-gradient(circle at top,
+      rgba(120,80,255,0.12),
+      transparent 40%),
+
+    radial-gradient(circle at bottom,
+      rgba(0,180,255,0.08),
+      transparent 35%);
+
+  pointer-events: none;
+  z-index: -2;
+}
+
+body::after {
+  content: "";
+
+  position: fixed;
+  inset: 0;
+
+  background-image:
+    radial-gradient(white 1px, transparent 1px);
+
+  background-size: 40px 40px;
+
+  opacity: 0.08;
+
+  animation: starsMove 90s linear infinite;
+
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes starsMove {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(200px);
+  }
+}
+
+/* ============================================================= */
+/* Navbar Glow
+/* ============================================================= */
+
+.navbar {
+
+  backdrop-filter: blur(14px);
+
+  background:
+    rgba(20,21,23,0.85) !important;
+
+  border-bottom:
+    1px solid rgba(255,255,255,0.05);
+
+  box-shadow:
+    0 0 20px rgba(120,80,255,0.08);
+}
+
+.navbar .nav-link {
+
+  transition:
+    color .2s ease,
+    transform .2s ease;
+}
+
+.navbar .nav-link:hover {
+
+  transform: translateY(-2px);
+}
+
+/* ============================================================= */
+/* Glowing Buttons
+/* ============================================================= */
+
+.btn.btn-primary {
+
+  box-shadow:
+    0 0 12px rgba(120,80,255,0.18);
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease;
+}
+
+.btn.btn-primary:hover {
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 0 18px rgba(120,80,255,0.35);
+}
+
+/* ============================================================= */
+/* Gallery Hover Effects
+/* ============================================================= */
+
+.cd-gallery-card,
+#charadex-gallery .card {
+
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease;
+}
+
+.cd-gallery-card:hover,
+#charadex-gallery .card:hover {
+
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 0 24px rgba(120,80,255,0.18);
+}
+
+/* ============================================================= */
+/* Custom Cursor
+/* ============================================================= */
+
+body {
+  cursor:
+  url('https://cur.cursors-4u.net/cursors/cur-11/cur1054.cur'),
+  auto;
+}
+
+/* ============================================================= */
+/* Mobile Improvements
+/* ============================================================= */
+
+@media (max-width: 768px) {
+
+  .navbar-brand {
+    font-size: 1.4rem !important;
+  }
+
+  .card {
+    padding: 1rem !important;
+  }
+
+  #main-container {
+    padding: 1rem !important;
+  }
+
+  .cd-hero-title {
+
+    min-height: 180px;
+
+    font-size: 2rem !important;
+
+    text-align: center;
+
+    justify-content: center;
+  }
+
+  .navbar .nav-link {
+    justify-content: center;
+  }
 }
