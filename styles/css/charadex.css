@@ -455,10 +455,6 @@ a:active {
 /* Card
 /* ============================================================= */
 
-/* ============================================================= */
-/* Card
-/* ============================================================= */
-
 .card {
 
   background:
@@ -488,20 +484,16 @@ a:active {
     border-color .25s ease;
 }
 
-.card {
+.card:hover {
 
-  background:
-    linear-gradient(
-      180deg,
-      rgba(44,45,52,0.92),
-      rgba(31,32,38,0.96)
-    ) !important;
+  transform: translateY(-4px);
 
-  border: 1px solid rgba(255,255,255,0.06) !important;
+  border-color:
+    rgba(150,120,255,0.2) !important;
 
-  border-radius: 1.2rem !important;
-
-  backdrop-filter: blur(10px);
+  box-shadow:
+    0 0 25px rgba(120,80,255,0.18),
+    0 0 45px rgba(80,170,255,0.08);
 }
 
 
