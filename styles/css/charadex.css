@@ -898,30 +898,3 @@ body::after {
     justify-content: center;
   }
 }
-
-/* ============================================================= */
-/* Full Width Footer
-/* ============================================================= */
-
-.footer {
-
-  width: 100%;
-
-  margin-top: auto;
-
-  background:
-    rgba(20,21,23,0.95) !important;
-
-  border-top:
-    1px solid rgba(255,255,255,0.05);
-
-  box-shadow:
-    0 -4px 20px rgba(0,0,0,0.2);
-
-  backdrop-filter: blur(10px);
-
-  position: relative;
-
-  left: 0;
-  bottom: 0;
-}
