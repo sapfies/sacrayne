@@ -835,25 +835,33 @@ body::after {
 }
 
 /* ============================================================= */
-/* Glowing Buttons
+/* Navbar Glow
 /* ============================================================= */
 
-.btn.btn-primary {
+.navbar {
+
+  backdrop-filter: blur(14px);
+
+  background:
+    rgba(20,21,23,0.85) !important;
+
+  border-bottom:
+    1px solid rgba(255,255,255,0.05);
 
   box-shadow:
-    0 0 12px rgba(120,80,255,0.18);
-
-  transition:
-    transform .2s ease,
-    box-shadow .2s ease;
+    0 0 20px rgba(120,80,255,0.08);
 }
 
-.btn.btn-primary:hover {
+.navbar .nav-link {
+
+  transition:
+    color .2s ease,
+    transform .2s ease;
+}
+
+.navbar .nav-link:hover {
 
   transform: translateY(-2px);
-
-  box-shadow:
-    0 0 18px rgba(120,80,255,0.35);
 }
 
 
