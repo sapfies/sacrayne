@@ -22,21 +22,21 @@ body {
   /* ============================================================= */
   /* Primary Color
   ================================================================ */
-  --cd-primary-color: #7686b4;
+  --cd-primary-color: #582eb9;
   --cd-primary-text-color: #ced3df;
 
   /* ============================================================= */
   /* Secondary Color
   ================================================================ */
-  --cd-secondary-color: #7f6dd6;
-  --cd-secondary-text-color: #a3a3a3;
+  --cd-secondary-color: #baa9de;
+  --cd-secondary-text-color: #857f9a;
 
   /* ============================================================= */
   /* Backgrounds
   ================================================================ */
-  --cd-body-background-color: #d1d3db;
-  --cd-content-background-color: #88898d;
-  --cd-faded-background-color: #d1d3db;
+  --cd-body-background-color: #f1f1f3;
+  --cd-content-background-color: #f1f1f3;
+  --cd-faded-background-color: #f1f1f3;
 
   /* Background Extras */
   --cd-body-background-image: url();
@@ -50,7 +50,7 @@ body {
   /* ============================================================= */
   /* Borders
   ================================================================ */
-  --cd-border-color: rgba(186,191,220,0.35);
+  --cd-border-color: rgba(216,218,229,0.85);
   --cd-border-width: 1px;
   --cd-border-style: solid;
   --cd-border-radius: 1rem;
@@ -58,7 +58,7 @@ body {
   /* ============================================================= */
   /* Navbar
   ================================================================ */
-  --cd-navbar-background-color: #2b2289;
+  --cd-navbar-background-color: #20094b;
   --cd-navbar-brand-color: var(--cd-primary-color);
   --cd-navbar-brand-color-hover: var(--cd-secondary-color);
   --cd-navbar-text-color: var(--cd-content-background-color);
@@ -111,7 +111,7 @@ body {
   --cd-navbar-dropdown-link-color-hover: var(--cd-primary-text-color);
 
   /* Divider */
-  --cd-navbar-dropdown-divider: rgba(255, 255, 255, .12);
+  --cd-navbar-dropdown-divider: rgba(91,87,116,0.12);
   --cd-navbar-dropdown-border-radius: 0 0 var(--cd-border-radius) var(--cd-border-radius);
 
 
@@ -793,7 +793,7 @@ body::before {
 
   background:
     radial-gradient(circle at top,
-      rgba(152,127,227,0.52),
+      rgba(163,152,197,0.52),
       transparent 40%),
 
     radial-gradient(circle at bottom,
@@ -803,38 +803,6 @@ body::before {
   pointer-events: none;
   z-index: -2;
 }
-
-
-/* ============================================================= */
-/* Navbar Glow
-/* ============================================================= */
-
-.navbar {
-
-  backdrop-filter: blur(14px);
-
-  background:
-    rgba(20,21,23,0.85) !important;
-
-  border-bottom:
-    1px solid rgba(255,255,255,0.05);
-
-  box-shadow:
-    0 0 20px rgba(120,80,255,0.08);
-}
-
-.navbar .nav-link {
-
-  transition:
-    color .2s ease,
-    transform .2s ease;
-}
-
-.navbar .nav-link:hover {
-
-  transform: translateY(-2px);
-}
-
 
 /* ============================================================= */
 /* Mobile Improvements
@@ -883,3 +851,4 @@ html {
 html::-webkit-scrollbar {
   display: none;
 }
+
