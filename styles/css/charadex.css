@@ -1,7 +1,7 @@
 :root {
 
-  --glow-purple: rgba(120, 80, 255, 0.35);
-  --glow-blue: rgba(80, 170, 255, 0.18);
+  --glow-purple: rgba(53,32,124,0.35);
+  --glow-blue: rgba(209,215,221,0.18);
 
 }
 
@@ -22,21 +22,21 @@ body {
   /* ============================================================= */
   /* Primary Color
   ================================================================ */
-  --cd-primary-color: #3a1c8c;
-  --cd-primary-text-color: #8599c5;
+  --cd-primary-color: #7686b4;
+  --cd-primary-text-color: #ced3df;
 
   /* ============================================================= */
   /* Secondary Color
   ================================================================ */
-  --cd-secondary-color: #758489;
-  --cd-secondary-text-color: #fff;
+  --cd-secondary-color: #7f6dd6;
+  --cd-secondary-text-color: #a3a3a3;
 
   /* ============================================================= */
   /* Backgrounds
   ================================================================ */
-  --cd-body-background-color: #1f2026;
-  --cd-content-background-color: #2c2d34;
-  --cd-faded-background-color: #1f2026;
+  --cd-body-background-color: #d1d3db;
+  --cd-content-background-color: #88898d;
+  --cd-faded-background-color: #d1d3db;
 
   /* Background Extras */
   --cd-body-background-image: url();
@@ -44,13 +44,13 @@ body {
   /* ============================================================= */
   /* Text
   ================================================================ */
-  --cd-body-text-color: #6b6a72;
-  --cd-faded-text-color: #453b79;
+  --cd-body-text-color: #8c8c8c;
+  --cd-faded-text-color: #6d5dbf;
 
   /* ============================================================= */
   /* Borders
   ================================================================ */
-  --cd-border-color: rgba(16,17,23,0.46);
+  --cd-border-color: rgba(186,191,220,0.35);
   --cd-border-width: 1px;
   --cd-border-style: solid;
   --cd-border-radius: 1rem;
@@ -58,7 +58,7 @@ body {
   /* ============================================================= */
   /* Navbar
   ================================================================ */
-  --cd-navbar-background-color: #141517;
+  --cd-navbar-background-color: #2b2289;
   --cd-navbar-brand-color: var(--cd-primary-color);
   --cd-navbar-brand-color-hover: var(--cd-secondary-color);
   --cd-navbar-text-color: var(--cd-content-background-color);
@@ -132,7 +132,7 @@ body {
   /* Link
   ================================================================ */
 
-  --cd-link-text-color: #412f8a;
+  --cd-link-text-color: #5e82bb;
   --cd-link-text-color-hover: var(--cd-secondary-color);
 
 
@@ -793,11 +793,11 @@ body::before {
 
   background:
     radial-gradient(circle at top,
-      rgba(120,80,255,0.12),
+      rgba(152,127,227,0.52),
       transparent 40%),
 
     radial-gradient(circle at bottom,
-      rgba(0,180,255,0.08),
+      rgba(15,128,174,0),
       transparent 35%);
 
   pointer-events: none;
